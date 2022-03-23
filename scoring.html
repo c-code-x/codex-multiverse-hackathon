@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Multiverse Themed Hackathon</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <div class="scoring-img">
+            <div class="topnav" id="myTopnav">
+                <img src="favicon-bg.png" alt="fav-icon" height="30px" width="30px"style="float: left;padding:12px" id="fav-icon">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="prizes.html">Prizes</a>
+                <a href="scoring.html">Scoring</a>
+                <a href="rules.html">Rules</a>
+                <a href="about.html">About</a>
+                <a href="home.html" class="active">Home</a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+            </script>
+            <div class="scoring-txt">
+                <!-- <h1><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OCwidyI6MTI1MCwiZnMiOjcwLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0Y0RjNGMCIsInQiOjF9/U0NPUklORw/dragonlord.png" alt="title"></h1> -->
+                <h1>
+                    <img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OCwidyI6MTI1MCwiZnMiOjcwLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0Y0RjNGMCIsInQiOjF9/U0NPUklORw/dragonlord.png 480w,
+                    https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OCwidyI6MTI1MCwiZnMiOjcwLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0Y0RjNGMCIsInQiOjF9/U0NPUklORw/dragonlord.png 1500w"
+                    sizes="(max-width: 600px) 480px" 
+                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OCwidyI6MTI1MCwiZnMiOjcwLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0Y0RjNGMCIsInQiOjF9/U0NPUklORw/dragonlord.png"
+                    alt="title">
+                </h1>
+            </div>
+        </div>
+        <div class="scoring" style="box-sizing: border-box;">
+            <div class="scoringimage">
+              <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2014/12/shutterstock_178449461.jpg">
+            </div>
+            <div class="scoringtext">
+              <ul style="list-style: square;">
+                      <li>Each challenge has a pre-determined score.</li>
+                      <li>A team's score depends on the number of test cases a team's code submission successfully passes.</li>
+                      <li>If a team submits more than one solution per challenge, then the team’s score will reflect the highest score achieved. </li>
+                      <li>In a game challenge, the team's score will reflect the last code submission.</li>
+                      <li>Teams are ranked by score. If two or more teams achieve the same score, then the tie is broken by the total time taken to submit the last solution resulting in a higher score</li>
+                  </ul>
+            </div>
+        </div>
+    </body>
+</html>
