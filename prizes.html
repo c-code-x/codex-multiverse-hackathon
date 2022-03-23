@@ -1,80 +1,106 @@
 <html>
-    <head>
-        <title>Multiverse Themed Hackathon</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .prizes {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: auto;
-                width: 80%;
-                font-size: 24px;
-                line-height: 1.25;
-                padding: 24px;
-            }
-            .prizes img {
-                max-width: 80%;
-            }
-            .prizestext {
-                font-size: 20px;
-                flex-basis: 80%;
-            }
-            .prizestext ol {
-                padding-left: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="prizes-img">
-            <div class="topnav" id="myTopnav">
-                <img src="favicon-bg.png" alt="fav-icon" height="30px" width="30px"style="float: left;padding:12px" id="fav-icon">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="prizes.html">Prizes</a>
-                <a href="scoring.html">Scoring</a>
-                <a href="rules.html">Rules</a>
-                <a href="about.html">About</a>
-                <a href="home.html" class="active">Home</a>
-            </div>
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-            </script>
-            <div class="prizes-txt">
-                <!-- <h1><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png" alt="title"></h1> -->
-                <h1><img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png 480w,
-                    https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png 1500w"
-                    sizes="(max-width: 600px) 480px" 
-                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png"
-                    alt="title">
-                </h1>
-            </div>
-        </div>
-        <div class="prizes" style="box-sizing: border-box;">
-            <div class="prizestext">
-              <h4>For the winning teams of CodeX Multiverse</h4><br>
-              <ol>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Rs. 7000<br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Rs. 5000<br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Rs. 3000<br>
-                </ol><br>
-              <h4>Along with these prizes,they will be given certificates and other participants will be recieving e-certificates</h4>
-            </div>
-            <div class="prizesimage">
-                <img src="https://media.istockphoto.com/vectors/vector-winner-concept-of-people-team-members-business-flat-with-man-vector-id1198239277?k=20&m=1198239277&s=170667a&w=0&h=OdqQhESmfZfCgj4pSGBrXJBfl2gcKi5HBuTlrkZ82zA=" slt="prize">
-            </div>
-        </div>
-    </body>
+  <head>
+    <title>Multiverse Themed Hackathon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .prizes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        font-size: 24px;
+        line-height: 1.25;
+        padding: 24px;
+      }
+      .prizes img {
+        max-width: 80%;
+      }
+      .prizestext {
+        font-size: 20px;
+        flex-basis: 80%;
+      }
+      .prizestext ol {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prizes-img">
+      <div class="topnav" id="myTopnav">
+        <img
+          src="favicon-bg.png"
+          alt="fav-icon"
+          height="30px"
+          width="30px"
+          style="float: left; padding: 12px"
+          id="fav-icon"
+        />
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="prizes.html">Prizes</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rules.html">Rules</a>
+        <a href="about.html">About</a>
+        <a href="home.html" class="active">Home</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+      <div class="prizes-txt">
+        <!-- <h1><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png" alt="title"></h1> -->
+        <h1>
+          <img
+            srcset="
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png  480w,
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png 1500w
+            "
+            sizes="(max-width: 600px) 480px"
+            src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4OSwidyI6MTI1MCwiZnMiOjcxLCJmZ2MiOiIjRkZGREZEIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/UFJJWkVT/dragonlord.png"
+            alt="title"
+          />
+        </h1>
+      </div>
+    </div>
+    <div class="prizes" style="box-sizing: border-box">
+      <div class="prizestext">
+        <h4>For the winning teams of CodeX Multiverse</h4>
+        <br />
+        <ol>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Rs. 7000<br />
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Rs. 5000<br />
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Rs. 3000<br />
+        </ol>
+        <br />
+        <h4>
+          Along with these prizes,they will be given certificates and other
+          participants will be recieving e-certificates
+        </h4>
+      </div>
+      <div class="prizesimage">
+        <img
+          src="https://media.istockphoto.com/vectors/vector-winner-concept-of-people-team-members-business-flat-with-man-vector-id1198239277?k=20&m=1198239277&s=170667a&w=0&h=OdqQhESmfZfCgj4pSGBrXJBfl2gcKi5HBuTlrkZ82zA="
+          slt="prize"
+        />
+      </div>
+    </div>
+  </body>
 </html>

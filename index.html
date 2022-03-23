@@ -1,113 +1,152 @@
 <html>
-    <head>
-        <title>Multiverse Themed Hackathon</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style> 
-        .button a:link, a:visited {
-            background-color: rgb(135, 28, 28);
-            color: azure;
-            text-decoration: none;
-            display: inline-block;
-            }
+  <head>
+    <title>Multiverse Themed Hackathon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .button a:link,
+      a:visited {
+        background-color: rgb(135, 28, 28);
+        color: azure;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .button {
+        border: none;
+        background-color: rgb(135, 28, 28);
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-weight: bold;
+        width: 400px;
+      }
+      @media screen and (max-width: 900px) {
         .button {
-            border: none;
-            background-color: rgb(135, 28, 28);
-            padding: 16px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            font-weight:bold;
-            width: 400px;   
+          width: 200px;
+          font-size: 16px;
         }
-        @media screen and (max-width: 900px) {
-            .button{
-                width: 200px;
-                font-size: 16px;
-            }
+      }
+      @media screen and (max-width: 600px) {
+        .button {
+          width: 100px;
+          font-size: 12px;
         }
-        @media screen and (max-width: 600px) {
-            .button{
-                width: 100px;
-                font-size: 12px;
-            }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home-img">
+      <div class="topnav" id="myTopnav">
+        <img
+          src="favicon-bg.png"
+          alt="fav-icon"
+          height="30px"
+          width="30px"
+          style="float: left; padding: 12px"
+          id="fav-icon"
+        />
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="prizes.html">Prizes</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rules.html">Rules</a>
+        <a href="about.html">About</a>
+        <a href="home.html" class="active">Home</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
         }
-        </style>           
-    </head>
-    <body>
-        <div class="home-img">
-            <div class="topnav" id="myTopnav">
-                <img src="favicon-bg.png" alt="fav-icon" height="30px" width="30px"style="float: left;padding:12px" id="fav-icon">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="prizes.html">Prizes</a>
-                <a href="scoring.html">Scoring</a>
-                <a href="rules.html">Rules</a>
-                <a href="about.html">About</a>
-                <a href="home.html" class="active">Home</a>
-            </div>
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-            </script>
-            <div class="home-txt">
-                <h1>
-                   <img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png 480w,
-                   https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png 1200w"
-                    sizes="(max-width: 600px) 480px" 
-                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png"
-                    alt="title">
-                </h1>
-            </div>
-        </div>
-        <div class="venue">
-            <h2>
-                <img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png 680w,
-                    https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png 1750w"
-                    sizes="(max-width: 600px) 480px" 
-                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png"
-                    alt="Date">
-            </h2><br>
-            <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png" alt="Date"></h2><br> -->
-            <h2>
-                <img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png 680w,
-                    https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png 1750w"
-                    sizes="(max-width: 600px) 480px" 
-                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png"
-                    alt="Time">
-            </h2><br>
-            <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png" alt="Time"></h2><br> -->
-            <h2>
-                <img srcset="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png 680w,
-                    https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png 1750w"
-                    sizes="(max-width: 600px) 480px" 
-                    src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png"
-                    alt="Time">
-            </h2>
-            <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png" alt="venue"></h2> -->
-        </div>
-        <div class="b" style="margin: auto;width:25%;padding-bottom: 16px;">
-            <button class="button"><a href="https://forms.gle/VrHZ67sVtcPKtoy2A">CLICK HERE TO REGISTER</a></button>
-        </div>
-        <div class="poster" style="margin: auto;width: 32%; padding-bottom: 30px;">
-            <img src="Multiverse CODE X.png" alt="poster" width="500px" height="600px">
-        </div>
-        <!-- <div class="banner" style="margin: auto;width: 32%; padding-bottom: 30px;">
+      </script>
+      <div class="home-txt">
+        <h1>
+          <img
+            srcset="
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png  480w,
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png 1200w
+            "
+            sizes="(max-width: 600px) 480px"
+            src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png"
+            alt="title"
+          />
+        </h1>
+      </div>
+    </div>
+    <div class="venue">
+      <h2>
+        <img
+          srcset="
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png  680w,
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png 1750w
+          "
+          sizes="(max-width: 600px) 480px"
+          src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png"
+          alt="Date"
+        />
+      </h2>
+      <br />
+      <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0OSwidyI6MTI1MCwiZnMiOjM5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/REFURTogMjlUSCBNQVJDSCAyMDIy/dragonlord.png" alt="Date"></h2><br> -->
+      <h2>
+        <img
+          srcset="
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png  680w,
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png 1750w
+          "
+          sizes="(max-width: 600px) 480px"
+          src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png"
+          alt="Time"
+        />
+      </h2>
+      <br />
+      <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMDQwNDA0IiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/VElNRTogMTA6MDAgQU0gdG8gNDowMCBQTQ/dragonlord.png" alt="Time"></h2><br> -->
+      <h2>
+        <img
+          srcset="
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png  680w,
+            https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png 1750w
+          "
+          sizes="(max-width: 600px) 480px"
+          src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png"
+          alt="Time"
+        />
+      </h2>
+      <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoyNCwidyI6MTI1MCwiZnMiOjE5LCJmZ2MiOiIjMEMwQzBDIiwiYmdjIjoiI0Y5RjdGNyIsInQiOjF9/VkVOVUU6IFNoaXZhamkgQmhhdmFu/dragonlord.png" alt="venue"></h2> -->
+    </div>
+    <div class="b" style="margin: auto; width: 25%; padding-bottom: 16px">
+      <button class="button">
+        <a href="https://forms.gle/VrHZ67sVtcPKtoy2A">CLICK HERE TO REGISTER</a>
+      </button>
+    </div>
+    <div class="poster" style="margin: auto; width: 32%; padding-bottom: 30px">
+      <img
+        src="Multiverse CODE X.png"
+        alt="poster"
+        width="500px"
+        height="600px"
+      />
+    </div>
+    <!-- <div class="banner" style="margin: auto;width: 32%; padding-bottom: 30px;">
             <img src="Multiverse CODE X.png" alt="poster" width="500px" height="600px">
         </div> -->
-    </body>
+  </body>
 </html>
