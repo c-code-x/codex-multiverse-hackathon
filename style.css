@@ -63,9 +63,9 @@
   }
 }
 .home-img {
-  background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+  background-image: url("homepage.jpeg");
   /* filter: saturate(60%); */
-  height: 740px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -73,7 +73,7 @@
 }
 @media screen and (max-width: 900px) {
   .home-img {
-    background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+    background-image: url("homepage.jpeg");
     height: 380px;
   }
   .poster img {
@@ -83,7 +83,7 @@
 }
 @media screen and (max-width: 600px) {
   .home-img {
-    background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+    background-image: url("homepage.jpeg");
     height: 240px;
   }
 }
@@ -99,7 +99,7 @@
 .rules-img,
 .scoring-img,
 .prizes-img {
-  background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+  background-image: url("homepage.jpeg");
   /* filter: saturate(60%); */
   height: 50%;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@
   .rules-img,
   .scoring-img,
   .prizes-img {
-    background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+    background-image: url("homepage.jpeg");
     /* filter: saturate(60%); */
     height: 30%;
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@
   .rules-img,
   .scoring-img,
   .prizes-img {
-    background-image: url("https://images3.alphacoders.com/121/thumb-1920-1213553.jpg");
+    background-image: url("homepage.jpeg");
     /* filter: saturate(60%); */
     height: 30%;
     background-repeat: no-repeat;
@@ -253,5 +253,38 @@
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+}
+.button a:link,
+a:visited {
+  background-color: rgb(135, 28, 28);
+  color: azure;
+  text-decoration: none;
+  display: inline-block;
+}
+.button {
+  border: none;
+  background-color: rgb(135, 28, 28);
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  width: 400px;
+}
+@media screen and (max-width: 900px) {
+  .button {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button {
+    width: 100px;
+    font-size: 12px;
   }
 }
