@@ -13,9 +13,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      * {
-        box-sizing: border-box;
-      }
+       *{
+         box-sizing: border-box;
+       }
+       .faq{
+        background-color: rgb(93, 8, 8);
+        padding:20px;
+       }
+        .layout{
+            width: 600px;
+            margin: auto;
+            background-color: rgb(93, 8, 8);
+        }
+        .accordion{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: rgb(238, 241, 238);
+            border-radius: 5px;
+        }
+        .accordion__question p{
+            margin: 5px;
+            padding: 0;
+            font-size: 22px;
+        }
+        .accordion__answer p{
+            margin: 5px;
+            padding: 10px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background: rgb(88, 13, 13);
+            border-radius: 8px; 
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__answer {
+            display: none;
+        } 
+        .accordion.active .accordion__answer {
+            display: block;
+        }
     </style>
   </head>
   <body>
@@ -24,8 +62,8 @@
         <img
           src="favicon-bg.png"
           alt="fav-icon"
-          height="60px"
-          width="60px"
+          height="40px"
+          width="40px"
           style="float: left; padding: 12px"
           id="fav-icon"
         />
@@ -101,5 +139,97 @@
         </div>
       </div>
     </div>
+    <div class="faq">
+        <center>
+          <h2>
+            <img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo4NiwidyI6MTI1MCwiZnMiOjY5LCJmZ2MiOiIjRkZGQUZBIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/RkFR/dragonlord.png" alt="FAQ">
+          </h2>
+        </center>
+        <div class="layout">
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>What is prize money ?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>First prize-7k<br>
+                      Second prize-5k<br>
+                      Third prize-3k</p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>How many members per team?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      Maximum 3 members and minimum 1 member.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>Who all are eligible?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      All the students of gitam bangalore campus are eligible.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>What is the participation fee?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      There is no participation fee, its absolutly free.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>Will I get attendance?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      Yes you will be given attendance for all the classes during the event time.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>Should I bring my laptop or will it be provided?</p> 
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      System will be provided by college.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+              <div class="accordion__question">
+                  <p>Is it an open book exam?</p>
+              </div>
+              <div class="accordion__answer">
+                  <p>
+                      Yes you can use any source or material to get the answer
+                  </p>
+              </div>
+          </div>         
+      </div>
+      <script>
+          let answers=document.querySelectorAll(".accordion");
+          answers.forEach((event)=>{
+              event.addEventListener('click',()=>{
+                  if(event.classList.contains("active")){
+                      event.classList.remove("active");
+                  }
+                  else{
+                      event.classList.add("active");
+                  }
+              })
+          })
+      </script>
+      </div>
   </body>
 </html>
