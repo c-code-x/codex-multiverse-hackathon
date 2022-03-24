@@ -62,6 +62,12 @@
     text-align: center;
   }
 }
+.banner,
+.poster {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
 .home-img {
   background-image: url("homepage.jpeg");
   /* filter: saturate(60%); */
@@ -287,4 +293,43 @@ a:visited {
     width: 100px;
     font-size: 12px;
   }
+}
+/* faq */
+.faq {
+  background-color: rgb(93, 8, 8);
+  padding: 20px;
+}
+.layout {
+  width: 600px;
+  margin: auto;
+  background-color: rgb(93, 8, 8);
+}
+.accordion {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(238, 241, 238);
+  border-radius: 5px;
+}
+.accordion__question p {
+  margin: 5px;
+  padding: 0;
+  font-size: 22px;
+}
+.accordion__answer p {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(88, 13, 13);
+  border-radius: 8px;
+}
+.accordion:hover {
+  cursor: pointer;
+}
+.accordion__answer {
+  display: none;
+}
+.accordion.active .accordion__answer {
+  display: block;
 }

@@ -1,0 +1,26 @@
+footer {
+  background-color: #111;
+  color: white;
+  padding: 15px;
+}
+.footer-content h3 {
+  text-align: center;
+  justify-content: center;
+}
+.footer-content p {
+  text-align: center;
+}
+.socials li {
+  display: inline-block;
+  padding: 10px;
+}
+.socials {
+  margin-left: 48%;
+  margin-right: 46%;
+  padding: 10px 0;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
