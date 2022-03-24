@@ -64,9 +64,10 @@
 }
 .banner,
 .poster {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  /* width: 50%; */
+  padding-bottom: 20px;
 }
 .home-img {
   background-image: url("homepage.jpeg");
