@@ -1,6 +1,8 @@
 <html>
   <head>
     <title>Multiverse Themed Hackathon</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width", initial-scaler="1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,23 +14,57 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+   <link rel="stylesheet" href="footer.css">
     <style>
-      .banner,
-      .poster{
-        margin: auto;
-        width: 50%;
-        padding: 20px;
+      .banner-row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .banner-column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .banner-column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .banner-column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .banner-column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="home-img">
+    <div class="homeimgresposive">
       <div class="topnav" id="myTopnav">
         <img
           src="favicon-bg.png"
           alt="fav-icon"
-          height="50px"
-          width="50px"
+          height="40px"
+          width="40px"
           style="float: left; padding: 12px"
           id="fav-icon"
         />
@@ -51,8 +87,32 @@
           }
         }
       </script>
+      <img src="homepage.jpeg" alt="home" class="home-img">
       <div class="home-txt">
-        <h1>
+          <h1>
+            <img
+            srcset="
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png  480w,
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png 1200w
+            "
+            sizes="(max-width: 600px) 480px"
+            src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png"
+            alt="title"
+          />
+          </h1>
+          <h3>
+            <img
+            srcset="
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo1MywidyI6MTI1MCwiZnMiOjQyLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/SGFja2F0aG9u/dragonlord.png  680w,
+              https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo1MywidyI6MTI1MCwiZnMiOjQyLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/SGFja2F0aG9u/dragonlord.png 1750w
+            "
+            sizes="(max-width: 600px) 480px"
+            src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo1MywidyI6MTI1MCwiZnMiOjQyLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/SGFja2F0aG9u/dragonlord.png"
+            alt="title"
+            style="float: right;"
+          />
+         </h3>
+        <!-- <h1>
           <img
             srcset="
               https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png  480w,
@@ -62,8 +122,9 @@
             src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png"
             alt="title"
           />
-          <img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo1MywidyI6MTI1MCwiZnMiOjQyLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/SGFja2F0aG9u/dragonlord.png" alt="hackathon" style="float: right;">
-        </h1>
+          <img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjoxMTYsInciOjEyNTAsImZzIjo5MywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiNGNkU2RTYiLCJ0IjoxfQ/Q09ERVggTVVMVElWRVJTRQ/dragonlord.png" alt="codex-multiverse" class="codex-multiverse"> 
+          <img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo1MywidyI6MTI1MCwiZnMiOjQyLCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/SGFja2F0aG9u/dragonlord.png" alt="hackathon" style="float: right;" class="hackathon">
+        </h1> -->
       </div>
     </div>
     <div class="venue">
@@ -111,11 +172,35 @@
         <a href="https://forms.gle/VrHZ67sVtcPKtoy2A">CLICK HERE TO REGISTER</a>
       </button>
     </div>
-    <div class="banner">
+    <!-- <div class="banner">
       <img src="CodeX MULTI-VERSE.png" alt="banner" width="800px">
     </div>
     <div class="poster">
       <img src="Multiverse CODE X.png" alt="poster" width="800px">
+    </div> -->
+    <div class="banner-row"> 
+      <div class="banner-column">
+        <img src="CodeX MULTI-VERSE.png" style="width:100%">
+        
     </div>
+    <div class="banner-row">
+        <div class="banner-column">
+            <img src="Multiverse CODE X.png" style="width:100%">
+        </div>
+    </div>
+    <!-- <footer>
+      <div class="footer-content">
+        <h3>CodeX</h3> 
+          <p>“Eat Code Repeat” </p>
+          <p> <br>Contact Us<br>Email: codex_sig@gitam.in </p>
+          <ul class="socials">                    
+              <li><a href="https://www.instagram.com/codex_gitam/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCZ9sd4Lj85osgKLdEO9Fi7w"><i class="fa fa-youtube"></i></a></li>
+          </ul>                      
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright &copy;2022 Codex</p>
+      </div>
+  </footer> -->
   </body>
 </html>
