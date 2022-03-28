@@ -393,7 +393,6 @@ a:visited {
   max-width: 100%;
   padding: 0 4px;
 }
-
 .banner-column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -413,7 +412,6 @@ a:visited {
     margin: auto;
   }
 }
-
 /* timer */
 #timer {
   font-size: 5em;
