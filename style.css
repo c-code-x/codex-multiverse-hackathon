@@ -404,3 +404,53 @@ a:visited {
     margin: auto;
   }
 }
+
+/* timer */
+#timer {
+  font-size: 5em;
+  font-weight: 300;
+  color: white;
+  padding: 20px;
+  width: 700px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 100px;
+  padding: 15px;
+  background: rgb(88, 13, 13);
+  border-radius: 10px;
+  margin: 15px;
+}
+
+#timer div span {
+  color: #ffffff;
+  display: block;
+  margin-top: 15px;
+  font-size: 0.35em;
+  font-weight: 200;
+}
+@media screen and (max-width: 600px) {
+  #timer {
+    font-size: 1em;
+    margin: auto;
+    width: 200px;
+    padding: 5px;
+  }
+  #timer div {
+    display: inline-block;
+    min-width: 50px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  #timer div span {
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85em;
+    font-weight: 200;
+  }
+}
