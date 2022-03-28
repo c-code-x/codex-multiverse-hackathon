@@ -16,26 +16,47 @@
     />
     <link rel="stylesheet" href="footer.css" />
     <style>
-      .prizes {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-        font-size: 24px;
-        line-height: 1.25;
-        padding: 24px;
-      }
-      .prizes img {
-        max-width: 80%;
-      }
-      .prizestext {
-        font-size: 20px;
-        flex-basis: 80%;
-      }
-      .prizestext ol {
-        padding-left: 20px;
-      }
+      * {
+          box-sizing: border-box;
+        }
+
+        .prizes{
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 24px;
+          padding:24px 0;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+
+        .prizestext {
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .prizesimage {
+          padding: 10px;
+          flex: 50%;
+        }
+        .prizesimage img{
+          width: 80%;
+        }
+        /* .prizesimage img{
+          width:80%;
+        } */
+        @media (max-width: 600px) {
+          .prizes{
+            margin: auto;
+            font-size: 12px;
+          }
+          .prizestext,
+          .prizesimage {
+            flex: 100%;
+          }
+          .prizesimage img{
+            width:80%;
+          }
+        }
     </style>
   </head>
   <body>
@@ -84,26 +105,26 @@
         </h1>
       </div>
     </div>
-    <div class="prizes" style="box-sizing: border-box">
+    <div class="prizes">
       <div class="prizestext">
-        <h4>For the winning teams of CodeX Multiverse</h4>
-        <br />
-        <ol>
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Rs. 7000<br />
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Rs. 5000<br />
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Rs. 3000<br />
-        </ol>
-        <br />
-        <h4>
-          Along with these prizes,they will be given certificates and other
-          participants will be recieving e-certificates
-        </h4>
+          <h4>For the winning teams of CodeX Multiverse</h4>
+            <br />
+            <ol>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1. Rs. 7000<br />
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2. Rs. 5000<br />
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3. Rs. 3000<br />
+            </ol>
+            <br />
+            <h4>
+              Along with these prizes,they will be given certificates and other
+              participants will be recieving e-certificates
+           </h4>
       </div>
       <div class="prizesimage">
-        <img
-          src="https://media.istockphoto.com/vectors/vector-winner-concept-of-people-team-members-business-flat-with-man-vector-id1198239277?k=20&m=1198239277&s=170667a&w=0&h=OdqQhESmfZfCgj4pSGBrXJBfl2gcKi5HBuTlrkZ82zA="
-          slt="prize"
-        />
+          <img
+              src="https://media.istockphoto.com/vectors/vector-winner-concept-of-people-team-members-business-flat-with-man-vector-id1198239277?k=20&m=1198239277&s=170667a&w=0&h=OdqQhESmfZfCgj4pSGBrXJBfl2gcKi5HBuTlrkZ82zA="
+              slt="prize"
+            />
       </div>
     </div>
     <!-- <footer>

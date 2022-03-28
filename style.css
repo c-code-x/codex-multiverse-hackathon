@@ -94,20 +94,6 @@
     text-align: center;
   }
 }
-.banner,
-.poster {
-  margin-left: 25%;
-  margin-right: 25%;
-  /* width: 50%; */
-  padding-bottom: 20px;
-}
-/* .home-img {
-  background-image: url("homepage.jpeg");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-} */
 .home-img {
   width: 100%;
   height: auto;
@@ -126,22 +112,6 @@
     left: 8px;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .home-img {
-    background-image: url("homepage.jpeg");
-    height: 380px;
-  }
-  .poster img {
-    width: 200px;
-    height: 300px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .home-img {
-    background-image: url("homepage.jpeg");
-    height: 240px;
-  }
-} */
 .venue {
   padding: 30px;
 }
@@ -172,30 +142,6 @@
     position: relative;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .about-img,
-  .rules-img,
-  .scoring-img,
-  .prizes-img {
-    background-image: url("homepage.jpeg");
-    height: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-}
-@media screen and (max-width: 600px) {
-  .about-img,
-  .rules-img,
-  .scoring-img,
-  .prizes-img {
-    background-image: url("homepage.jpeg");
-    height: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-} */
 .rules,
 .scoring {
   display: flex;
@@ -260,7 +206,7 @@
     font-size: 12px;
   }
   .prizestext {
-    font-size: 10px;
+    font-size: 10vm;
   }
 }
 .gifs {
