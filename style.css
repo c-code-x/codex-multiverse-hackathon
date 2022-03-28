@@ -261,6 +261,15 @@ a:visited {
 .accordion.active .accordion__answer {
   display: block;
 }
+@media screen and (max-width: 600px) {
+  .layout {
+    width: 300px;
+  }
+  .accordion__question p,
+  .accordion__answer p {
+    font-size: 12px;
+  }
+}
 /* scoring  */
 .scoring {
   display: flex;
