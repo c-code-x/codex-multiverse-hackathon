@@ -75,8 +75,8 @@
     display: block;
   }
   #fav-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -142,53 +142,6 @@
     position: relative;
   }
 }
-.rules,
-.scoring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 80%;
-  font-size: 22px;
-  line-height: 1.25;
-  padding: 24px;
-}
-@media screen and (max-width: 900px) {
-  .rules,
-  .scoring {
-    margin: auto;
-    width: 80%;
-    font-size: 15px;
-    line-height: 1;
-    padding: 20px;
-  }
-  .rules img,
-  .scoring img {
-    max-width: 30%;
-  }
-  .rules_image,
-  .scoringimage {
-    flex-basis: 100%;
-  }
-  .rules_text,
-  .scoringtext {
-    font-size: 14px;
-    padding-left: 10px;
-  }
-}
-.rules img,
-.scoring img {
-  max-width: 80%;
-}
-.rules_image,
-.scoringimage {
-  flex-basis: 30%;
-}
-.rules_text,
-.scoringtext {
-  font-size: 20px;
-  padding-left: 20px;
-}
 .about {
   padding: 32px;
   font-size: 24px;
@@ -199,14 +152,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .about,
-  .rules,
-  .scoringtext {
+  .about {
     padding: 20px;
     font-size: 12px;
-  }
-  .prizestext {
-    font-size: 10vm;
   }
 }
 .gifs {
@@ -310,4 +258,108 @@ a:visited {
 }
 .accordion.active .accordion__answer {
   display: block;
+}
+/* scoring  */
+.scoring {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.scoringtext {
+  padding: 10px;
+  flex: 70%;
+}
+
+.scoringimage {
+  padding: 10px;
+  flex: 30%;
+}
+.scoringimage img {
+  width: 80%;
+}
+/* .prizesimage img{
+  width:80%;
+} */
+@media (max-width: 600px) {
+  .scoring {
+    margin: auto;
+    font-size: 12px;
+  }
+  .scoringtext,
+  .scoringimage {
+    flex: 100%;
+  }
+  .scoringimage img {
+    width: 60%;
+  }
+}
+/*prizes*/
+.prizes {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.prizestext {
+  padding: 10px;
+  flex: 70%;
+}
+.prizesimage {
+  padding: 10px;
+  flex: 30%;
+}
+.prizesimage img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .prizes {
+    margin: auto;
+    font-size: 12px;
+  }
+  .prizestext,
+  .prizesimage {
+    flex: 100%;
+  }
+  .prizesimage img {
+    width: 70%;
+  }
+}
+/* rules */
+.rules {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.rulestext {
+  padding: 10px;
+  flex: 80%;
+}
+
+.rulesimage {
+  padding: 10px;
+  flex: 20%;
+}
+@media (max-width: 600px) {
+  .rules {
+    margin: auto;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .rulestext,
+  .rulesimage {
+    flex: 100%;
+  }
+  .rulesimage img {
+    width: 20%;
+  }
 }
