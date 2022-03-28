@@ -142,25 +142,18 @@
     position: relative;
   }
 }
-.about {
-  padding: 32px;
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.25;
-  margin: auto;
-  width: 80%;
+.about,
+.gifs {
+  margin-left: 10%;
+  margin-right: 10%;
 }
-
-@media screen and (max-width: 600px) {
-  .about {
-    padding: 20px;
-    font-size: 12px;
-  }
+.about p {
+  padding: 32px;
+  font-size: 20px;
+  text-align: center;
 }
 .gifs {
-  margin: auto;
-  width: 70%;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 .row {
   display: -ms-flexbox;
@@ -185,6 +178,14 @@
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+  .about,
+  .gifs {
+    margin: auto;
+  }
+  .about p {
+    padding: 12px;
+    font-size: 12px;
   }
 }
 .button a:link,
@@ -361,5 +362,44 @@ a:visited {
   }
   .rulesimage img {
     width: 20%;
+  }
+}
+/*Banner home page*/
+* {
+  box-sizing: border-box;
+}
+.banner {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.banner-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.banner-column {
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.banner-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .banner-column {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: auto;
   }
 }
