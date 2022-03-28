@@ -16,19 +16,22 @@
     />
    <link rel="stylesheet" href="footer.css">
     <style>
-      .banner-row {
-        display: -ms-flexbox; /* IE10 */
+      * {
+          box-sizing: border-box;
+        }
+      .banner{
+        margin-left:20%;
+        margin-right:20%;
+      }
+      .banner-row{
+        display: -ms-flexbox; 
         display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 0 4px;
       }
-
-      /* Create four equal columns that sits next to each other */
       .banner-column {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-        max-width: 25%;
+        max-width: 100%;
         padding: 0 4px;
       }
 
@@ -37,22 +40,18 @@
         vertical-align: middle;
         width: 100%;
       }
-
-      /* Responsive layout - makes a two column-layout instead of four columns */
       @media screen and (max-width: 800px) {
         .banner-column {
-          -ms-flex: 50%;
-          flex: 50%;
-          max-width: 50%;
+          max-width: 100%;
+          margin:auto;
         }
       }
-
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 600px) {
         .banner-column {
           -ms-flex: 100%;
           flex: 100%;
           max-width: 100%;
+          margin:auto;
         }
       }
     </style>
@@ -178,16 +177,14 @@
     <div class="poster">
       <img src="Multiverse CODE X.png" alt="poster" width="800px">
     </div> -->
-    <div class="banner-row"> 
-      <div class="banner-column">
-        <img src="CodeX MULTI-VERSE.png" style="width:100%">
-        
-    </div>
-    <div class="banner-row">
+    <div class="banner">
+      <div class="banner-row"> 
         <div class="banner-column">
-            <img src="Multiverse CODE X.png" style="width:100%">
+          <img src="CodeX MULTI-VERSE.png" style="width:100%">
+          <img src="Multiverse CODE X.png" style="width:100%">
         </div>
-    </div>
+        </div>
+      </div>
     <!-- <footer>
       <div class="footer-content">
         <h3>CodeX</h3> 
