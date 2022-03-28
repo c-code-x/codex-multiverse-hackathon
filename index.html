@@ -126,31 +126,6 @@
       </h2>
       <!-- <h2><img src="https://see.fontimg.com/api/renderfont4/WyJZn/eyJyIjoiZnMiLCJoIjo0NiwidyI6MTI1MCwiZnMiOjM3LCJmZ2MiOiIjMEMwQjBCIiwiYmdjIjoiIzEwMEUwRSIsInQiOjF9/VkVOVUU6IFNISVZBSkkgQkhBVkFOIDVUSCBGTE9PUg/dragonlord.png" alt="venue"></h2> -->
     </div>
-    <div id="timer"></div>
-    <script type="text/javascript">
-      function updateTimer() {
-          event = Date.parse("March 29, 2022 16:00:00");
-          now = new Date();
-          diff = event - now;
-      
-          days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          hours = Math.floor(diff / (1000 * 60 * 60));
-          mins = Math.floor(diff / (1000 * 60));
-          secs = Math.floor(diff / 1000);
-      
-          d = days;
-          h = hours - days * 24;
-          m = mins - hours * 60;
-          s = secs - mins * 60;
-      
-          document.getElementById("timer")
-              .innerHTML =
-              '<div>' + h + '<span>HOURS</span></div>' +
-              '<div>' + m + '<span>MINUTES</span></div>' +
-              '<div>' + s + '<span>SECONDS</span></div>';
-      }
-      setInterval('updateTimer()', 1000);
-      </script>
     <div class="b" style="margin: auto; width: 25%; padding-bottom: 16px">
       <button class="button">
         <a href="https://forms.gle/VrHZ67sVtcPKtoy2A">CLICK HERE TO REGISTER</a>
