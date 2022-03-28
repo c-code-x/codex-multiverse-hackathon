@@ -371,6 +371,7 @@ a:visited {
 .banner {
   margin-left: 20%;
   margin-right: 20%;
+  padding-bottom: 40px;
 }
 .banner-row {
   display: -ms-flexbox;

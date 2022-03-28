@@ -1,5 +1,5 @@
 footer {
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.933);
   color: white;
   padding: 15px;
 }
@@ -23,4 +23,16 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .footer-bottom {
+    padding: 5px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  .socials {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 }
