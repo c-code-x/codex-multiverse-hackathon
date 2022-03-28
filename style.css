@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
 }
 .about-txt,
 .rules-txt,
@@ -75,8 +76,8 @@
     display: block;
   }
   #fav-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -94,20 +95,6 @@
     text-align: center;
   }
 }
-.banner,
-.poster {
-  margin-left: 25%;
-  margin-right: 25%;
-  /* width: 50%; */
-  padding-bottom: 20px;
-}
-/* .home-img {
-  background-image: url("homepage.jpeg");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-} */
 .home-img {
   width: 100%;
   height: auto;
@@ -126,22 +113,6 @@
     left: 8px;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .home-img {
-    background-image: url("homepage.jpeg");
-    height: 380px;
-  }
-  .poster img {
-    width: 200px;
-    height: 300px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .home-img {
-    background-image: url("homepage.jpeg");
-    height: 240px;
-  }
-} */
 .venue {
   padding: 30px;
 }
@@ -172,101 +143,18 @@
     position: relative;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .about-img,
-  .rules-img,
-  .scoring-img,
-  .prizes-img {
-    background-image: url("homepage.jpeg");
-    height: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+.about,
+.gifs {
+  margin-left: 10%;
+  margin-right: 10%;
 }
-@media screen and (max-width: 600px) {
-  .about-img,
-  .rules-img,
-  .scoring-img,
-  .prizes-img {
-    background-image: url("homepage.jpeg");
-    height: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-} */
-.rules,
-.scoring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 80%;
-  font-size: 22px;
-  line-height: 1.25;
-  padding: 24px;
-}
-@media screen and (max-width: 900px) {
-  .rules,
-  .scoring {
-    margin: auto;
-    width: 80%;
-    font-size: 15px;
-    line-height: 1;
-    padding: 20px;
-  }
-  .rules img,
-  .scoring img {
-    max-width: 30%;
-  }
-  .rules_image,
-  .scoringimage {
-    flex-basis: 100%;
-  }
-  .rules_text,
-  .scoringtext {
-    font-size: 14px;
-    padding-left: 10px;
-  }
-}
-.rules img,
-.scoring img {
-  max-width: 80%;
-}
-.rules_image,
-.scoringimage {
-  flex-basis: 30%;
-}
-.rules_text,
-.scoringtext {
-  font-size: 20px;
-  padding-left: 20px;
-}
-.about {
+.about p {
   padding: 32px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  line-height: 1.25;
-  margin: auto;
-  width: 80%;
-}
-
-@media screen and (max-width: 600px) {
-  .about,
-  .rules,
-  .scoringtext {
-    padding: 20px;
-    font-size: 12px;
-  }
-  .prizestext {
-    font-size: 10px;
-  }
 }
 .gifs {
-  margin: auto;
-  width: 70%;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 .row {
   display: -ms-flexbox;
@@ -291,6 +179,14 @@
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+  .about,
+  .gifs {
+    margin: auto;
+  }
+  .about p {
+    padding: 12px;
+    font-size: 12px;
   }
 }
 .button a:link,
@@ -364,4 +260,147 @@ a:visited {
 }
 .accordion.active .accordion__answer {
   display: block;
+}
+/* scoring  */
+.scoring {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.scoringtext {
+  padding: 10px;
+  flex: 70%;
+}
+
+.scoringimage {
+  padding: 10px;
+  flex: 30%;
+}
+.scoringimage img {
+  width: 80%;
+}
+@media (max-width: 600px) {
+  .scoring {
+    margin: auto;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .scoringtext,
+  .scoringimage {
+    flex: 100%;
+  }
+  .scoringimage img {
+    width: 60%;
+  }
+}
+/*prizes*/
+.prizes {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.prizestext {
+  padding: 10px;
+  flex: 70%;
+}
+.prizesimage {
+  padding: 10px;
+  flex: 30%;
+}
+.prizesimage img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .prizes {
+    margin: auto;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .prizestext,
+  .prizesimage {
+    flex: 100%;
+  }
+  .prizesimage img {
+    width: 70%;
+  }
+}
+/* rules */
+.rules {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  padding: 24px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.rulestext {
+  padding: 10px;
+  flex: 80%;
+}
+
+.rulesimage {
+  padding: 10px;
+  flex: 20%;
+}
+@media (max-width: 600px) {
+  .rules {
+    margin: auto;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .rulestext,
+  .rulesimage {
+    flex: 100%;
+  }
+  .rulesimage img {
+    width: 20%;
+  }
+}
+/*Banner home page*/
+* {
+  box-sizing: border-box;
+}
+.banner {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 40px;
+}
+.banner-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.banner-column {
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.banner-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .banner-column {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
 }
